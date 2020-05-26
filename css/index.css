@@ -1,0 +1,114 @@
+body{background-color: rgb(30,30,30); color: rgb(230,230,230);}
+  *{box-sizing: border-box;}
+  html{
+    scroll-behavior: smooth;
+  }
+.navBar{
+  width: 100%;
+  padding: 1em;
+  color: lightgray;
+  height: 6em;
+  box-shadow: 0em 0.2em 1em black;
+  position: fixed;
+  top: 0px;
+  background-color: rgba(30,30,30,0.98);
+}
+.logo{
+  width: 15%;
+  height: 100%;
+  float: left;
+  font-size: 2em;
+  font-weight: 600;
+  text-shadow: 5px 5px 3px black;
+  color: white;
+}
+.tabs{
+  margin-top: 1em;
+  float: right;
+  width: 85%;
+}
+.tabs a{
+  text-align: center;
+  display: inline-block;
+  border-right: ridge 0.2px white;
+  width: 16%;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: white;
+  padding: 0.2em;
+}
+.separator{
+  height: 8em;
+  /*border-top: ridge 2px black;*/
+}
+.intro{
+  width: 100%;
+  height: 500px;
+  color: rgb(230,230,230);
+  padding: 0.8em;
+  overflow: hidden;
+  margin-bottom: 3em;
+}
+.intro h1{
+  width: 100%;
+  text-align: center;
+}
+.mission{
+  margin-top: 2em;
+  width: 50%;
+  height: 80%;
+  font-size: 1.2em;
+  padding: 0.6em;
+  overflow: hidden;
+  text-align: justify;
+  float: left;
+}
+.introVideo{
+  margin: 3em 2em ;
+  width: 40%;
+  float: right;
+  height: 300px;
+  box-shadow: 0.2em 0.2em 10px black;
+}
+.videoFrame{
+  width: 100%;
+  height: 100%;
+}
+/* module*/
+.title{
+  color: rgb(230,230,230);
+  font-size: 3em;
+  padding-left: 0.5em ;
+}
+.subtitle{
+  color: rgb(230,230,230);
+  font-size: 1.5em;
+  font-style: italic;
+  padding-left: 1.5em;
+}
+.module{
+  width: 100%;
+  padding-left: 1.5em;
+}
+.module dt{
+  font-size: 1.2em;
+}
+.module dd{
+  font-size: 1.1em;
+}
+.moduleLink{
+  background-color: rgb(200,200,200);
+  padding: 0.5em 1em;
+  display: inline-block;
+  margin-top: 2em;
+  border-radius: 1em;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: black;
+  margin-bottom: 3em;
+}
+.moduleLink:hover{
+  background-color: black;
+  color: rgb(200,200,200);
+  box-shadow: 2px 2px 5px white;
+}

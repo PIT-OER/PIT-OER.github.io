@@ -1,53 +1,123 @@
+/* -- BASIC SET UP --*/
 body{background-color: rgb(30,30,30);
   color: rgb(230,230,230);
-font-family:calibri;   font-size: 1.1em;}
+font-family:calibri;   font-size: 1.05em;}
   *{box-sizing: border-box;}
   html{
     scroll-behavior: smooth;
   }
+:root {
+  --primaryColor:rgb(120,160,230);
+}
+/* -- HEADER --*/
 .navBar{
   width: 100%;
   padding: 1em;
-  color: lightgray;
-  height: 7em;
+  height: 8em;
   box-shadow: 0em 0.2em 1em black;
   position: fixed;
   top: 0px;
   background-color: rgba(30,30,30,0.98);
 }
 .logo{
-  width: 15%;
-  height: 100%;
+  width: 17%;
+  height: 110%;
   float: left;
-  font-size: 2em;
+  font-size: 0.8em;
   font-weight: 600;
-  text-shadow: 5px 5px 3px black;
-  color: white;
+  color: var(--primaryColor);
   text-decoration: none;
+  text-align:center;
+  overflow: hidden;
+  margin-top: -0.5em;
+}
+.logo img{
+  width: 76px;
+  height:76px;
+}
+.logo p{
+    margin-top: -0.1em;
 }
 .tabs{
-  margin-top: 2em;
+  margin-top: 3em;
   float: right;
-  width: 85%;
+  width: 83%;
+  display: block;
 }
+/*-- Modal Menu - Open in smartphone --*/
+.tabs_icon_modal{
+  display: none;
+  padding: 1em;
+  float: right;
+  margin-right: 5%;
+  margin-top: 1em;
+  font-size: 1.5em;
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+.close_modal_menu{
+  color: var(--primaryColor);
+  background-color: rgb(30,30,30);
+  padding: 1em;
+  font-size: 1.5em;
+  margin-top: 0;
+  display: block;
+  text-decoration: none;
+}
+.openModalMenu {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-color: rgba(30,30,30,0.9);
+opacity: 0;
+pointer-events: none;
+}
+.openModalMenu:target{
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 0.5s;
+}
+.openModalMenu_links{
+  width:80%;
+  height: 100px;
+  float: right;
+  background-color: var(--primaryColor);
+}
+.menu_links{
+  display: block;
+  padding: 1em ;
+  background-color: var(--primaryColor);
+  font-size: 1.2em;
+  font-weight: 600;
+  color: rgb(30,30,30);
+  text-decoration: none;
+  border-bottom:  solid 1px black;
+}
+/*-- --*/
 .tabs a {
   text-align: center;
   display: inline-block;
   border-right: ridge 0.2px white;
   width: 16%;
-  text-decoration: none;
-  color: white;
+  color: var(--primaryColor);
   padding: 0.2em;
   float: right;
 }
-.tabs a:hover{
-  text-shadow: 2px 2px 5px white;
+.tabs a:hover,.currentModuleLink{
+  color: rgb(30,30,30);
+  text-decoration: none;
+  background-color: var(--primaryColor);
 }
-
+.currentModuleLink{
+  font-size: 1.2em;
+}
 .separator{
-  height: 8em;
+  height: 10em;
   /*border-top: ridge 2px black;*/
 }
+/* -- INTRO --*/
 .intro{
   width: 100%;
   height: 500px;
@@ -59,9 +129,11 @@ font-family:calibri;   font-size: 1.1em;}
 .intro h1{
   width: 100%;
   text-align: center;
+  margin-top: -0.5em;
+  color: var(--primaryColor);
+  padding: 0.8em;
 }
 .mission{
-  margin-top: 2em;
   width: 50%;
   height: 80%;
   font-size: 1.2em;
@@ -70,8 +142,13 @@ font-family:calibri;   font-size: 1.1em;}
   text-align: justify;
   float: left;
 }
+.mission h3{
+  border-bottom: ridge 2px lightgray;
+  padding-bottom: 0.5em;
+  color: var(--primaryColor);
+}
 .introVideo{
-  margin: 3em 2em ;
+  margin: 1em 2em ;
   width: 40%;
   float: right;
   height: 300px;
@@ -81,54 +158,119 @@ font-family:calibri;   font-size: 1.1em;}
   width: 100%;
   height: 100%;
 }
-/* module*/
+/*--MODULES --*/
 .title{
-  color: rgb(230,230,230);
+  color: VAR(--primaryColor);
   font-size: 2.5em;
   padding-left: 0.5em ;
   font-weight: 600;
 }
 .subtitle{
-  color: rgb(230,230,230);
+  color: var(--primaryColor);
   font-size: 1.5em;
   font-style: italic;
   padding-left: 1.2em;
 }
+.module, .each_module{
+  width: 96%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(200,200,200);
+  overflow: hidden;
+}
 .module{
-  width: 100%;
-  padding-left: 1.5em;
+    height:23em;
 }
-.module dt{
-  font-size: 1.2em;
-}
-.module dd{
-  font-size: 1.1em;
-  font-weight: lighter;
+.each_module{
+  height: 23em;
 }
 .moduleLink{
-  background-color: rgb(200,200,200);
+  color: var(--primaryColor);
   padding: 0.5em 1em;
   display: inline-block;
   margin-top: 2em;
-  border-radius: 1em;
-  text-decoration: none;
-  font-size: 1.2em;
-  color: black;
-  margin-bottom: 3em;
+  border-radius: 0.5em;
+  background-color: rgb(30,30,30);
+  font-size: 1em;
+  margin:1em 0.5em;
   font-weight: 600;
 }
 .moduleLink:hover{
-  background-color: black;
-  color: rgb(200,200,200);
-  box-shadow: 2px 2px 5px white;
+  color: black;
+  background-color: rgb(200,200,200);
+  box-shadow: 2px 2px 5px rgb(30,30,30);
+  text-decoration: none;
 }
-/* authors */
-.authors{
-  margin-top: 3em;
+/*-- module tabs --*/
+.module_tabs{
   width: 100%;
-  padding: 1.2em;
+  height: 3em;
+  background-color: rgb(10,10,10);
+  float: left;
+}
+.each_module_tabs{
+  width: 20%;
+  height: 100%;
+  background-color: rgb(10,10,10);
+  overflow: hidden;
+  float: left;
+}
+.module_tab_button{
+  width: auto;
+  height: 100%;
+  padding:1em 5em;
+}
+.module_tab_button, .eachModule_tab_button{
+  font-size: 0.9em;
+  color: var(--primaryColor);
+  background-color: rgb(10,10,10);
+  border: none;
+  outline: 0;
+  text-decoration: underline;
+}
+.eachModule_tab_button{
+  width: 100%;
+  padding: 1em;
+  height: auto;
+}
+.eachModule_tab_button a{
+  color: var(--primaryColor);
+}
+.module_tab_button:active{
+  border: none;
+}
+.module_tab_active{
+  background-color: var(--primaryColor);
+  color: rgb(30,30,30);
+  border: none;
+  text-decoration:none;
+  font-weight: 600;
+}
+.module_window{
+  width: 100%;
+  height: 65%;
+}
+.module_window, .module4_window{
+  padding: 1em;
   float: right;
   text-align: justify;
+  color: rgb(30,30,30);
+  overflow-y: scroll;
+}
+.module4_window{
+  width: 78%;
+  height: 100%;
+}
+
+/* --AUTHORS-- */
+.authors{
+  margin-top: 3em;
+  margin-bottom: 5em;
+  width: 100%;
+  padding: 1.2em;
+  text-align: justify;
+  border-bottom: ridge 1px lightgray;
 }
 .author_img{
   width: 200px;
@@ -141,7 +283,6 @@ font-family:calibri;   font-size: 1.1em;}
 /* footer */
 .footer{
   width: 100%;
-  margin-top: 5em;
   margin-bottom: 5em;
   padding: 1.2em;
 }
@@ -154,9 +295,6 @@ font-family:calibri;   font-size: 1.1em;}
 .copyrighted_img a img{
   width: 130px;
   height: 40px;
-}
-.authors{
-  margin-bottom: 3em;
 }
 .authors a{
   text-decoration: none;

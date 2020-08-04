@@ -4,30 +4,212 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale:1.0;">
     <link rel="stylesheet" href="css/index.css" type="text/css">
-    <title>Module 3: 3D Printing</title>
+    <link rel="stylesheet" href="css/window_size.css" type="text/css">
+    <title>Module 3: 3D Printing applied to everyday Public Interest</title>
   </head>
   <body>
     <div class="navBar">
-      <a href="index.html"class="logo">
-        PIT for TECH100
-      </a>
+      <div class="logo">
+        <a href="https://www.qcc.cuny.edu/" target="_blank"><img src="img/QCC_logo.png" alt="Queenborough Community College" title="Queenborough Community College"></a>
+        <p>Public Interest Technology <br>Open Educational Resources</p>
+      </div>
       <div class="tabs">
           <a href="index.html#team" style="border-right:none;">Meet Our Team</a>
           <a href="module4.html">Module 4</a>
-          <a href="module2.html">Module 2</a>
+          <a href="module3.html" >Module 2</a>
           <a href="module1.html">Module 1</a>
           <a href="index.html">Home</a>
+          <a href="#"class="currentModuleLink" style="  color: rgb(30,30,30);">Module 3</a>
+      </div>
+      <a  href="#openMenu" class="tabs_icon_modal">
+        &#9776; &nbsp Menu
+      </a>
+    </div>
+    <!-- OPEN MENU - ONLY SMARTPHONE VIEW -->
+    <div class="openModalMenu" id="openMenu">
+      <div class="openModalMenu_links">
+        <a class="close_modal_menu" href="#">&#9932; &nbsp Menu</a>
+        <a href="index.html" class="menu_links">Home</a>
+        <a href="module1.html" class="menu_links">Module 1</a>
+        <a href="module2.html" class="menu_links">Module 2</a>
+        <a href="module3.html" class="menu_links">Module 3</a>
+        <a href="module4.html" class="menu_links">Module 4</a>
+        <a href="index.html#team" class="menu_links">Meet Our Team</a>
       </div>
     </div>
 
-
-    <div class="separator"id="module1"></div>
+    <div class="separator"></div>
     <span class="title" >Module 3: </span>
-    <span class="subtitle"> 3D Printing applied to everyday Public Interest (recreational arts) and to Public Work Institutions</span>
-    <hr>
-    <div class="module">
-      PAGE UDNER CONSTRUCTION
-    </div>
+    <span class="subtitle">3D Printing applied to everyday Public Interest (recreational arts) and to Public Work Institutions. </span>
+    <!--- -->
+    <div class="each_module">
+      <div class="each_module_tabs">
+        <button class="eachModule_tab_button module_tab_active tablink4" onclick="openTab4(event,'started')">Getting Started</button>
+        <button class="eachModule_tab_button tablink4" onclick="openTab4(event,'outline')">Module Outline</button>
+        <button class="eachModule_tab_button tablink4" onclick="openTab4(event,'premodule_assessment')">Pre-Module Assessment</button>
+        <button class="eachModule_tab_button tablink4" onclick="openTab4(event,'lecture1')">Lecture 1 - Technology</button>
+        <button class="eachModule_tab_button tablink4" onclick="openTab4(event,'lecture2')">Lecture 2 - Sotfware</button>
+        <button class="eachModule_tab_button tablink4" onclick="openTab4(event,'lecture3')">Lecture 3 - Application</button>
+        <button class="eachModule_tab_button tablink4" onclick="openTab4(event,'module_labs')">Module Labs</button>
+        <button class="eachModule_tab_button tablink4" onclick="openTab4(event,'postmodule_assessment')">Post-Module Assessment</button>
+      </div>
 
+      <div class="module4_window tabWindow4" id="started" style="display:block;">
+        <h3>Requirements Before Taking the Course</h3>
+        <ul>
+          <li>Learner is required to register at Tinkercad software prior to taking the course. </li>
+          <li>Autodesk’s Tinkercad is one of the most popular classroom tools for creating simple designs from scratch, quickly modifying existing designs. ​</li>
+          <li>It is a free online 3D design program that you can use in your web browser without downloading any software.​</li>
+          <li>Please click the following link to register at Tinkercad: <a href="https://www.tinkercad.com/" target="_blank">www.tinkercad.com</a> </li>
+        </ul>
+        <h3>Learning Objectives: </h3>
+        <ol>
+          <li>Assess learner’s 3D printing knowledge prior to taking the module.</li>
+          <li>Describe various 3D printing technologies.</li>
+          <li>Introduce 3D printing materials.​</li>
+          <li>Describe basic steps of 3D printing.</li>
+          <li>Describe printing resolution​</li>
+          <li>Describe 3D printing equipment at Queensborough Community College.​</li>
+          <li>Introduce commercial 3D modeling software.​</li>
+          <li>Introduce free 3D modeling software. ​</li>
+          <li>Train learners in Tinkercad 3D modeling software.​</li>
+          <li>Describe applications of 3D printing including those for general public use and public work use.​</li>
+          <li>Assign two laboratories.​</li>
+          <li>Assess learner’s 3D printing knowledge after completing the module.</li>
+        </ol>
+      </div>
+
+      <div class="module4_window tabWindow4" id="outline" style="display:none;">
+        <h3>Lecture:</h3>
+        <ol>
+          <li>Three-dimensional (3D) printing technologies</li>
+          <li>3D printing software</li>
+          <li>Applications of 3D printing</li>
+        </ol>
+        <h3>Laboratories:</h3>
+        <ol>
+          <li>Design a class ring with your school logo.</li>
+          <li>Design a coaster with your school logo.</li>
+        </ol>
+        <h3>Assessment:</h3>
+        <ul>
+          <li>Pre-Module Assessment
+              <ul><li>Test before studying the lectures.</li></ul>
+            </li>
+          <li>Post-Module Assessment
+              <ul>
+                <li>Test after studying the following lectures:
+                  <ol>
+                    <li>Lecture 1 - Three-dimensional (3D) printing technologies</li>
+                    <li>Lecture 2 - 3D printing software</li>
+                    <li>Lecture 3 - Applications of 3D printing</li>
+                  </ol>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="module4_window tabWindow4" id="premodule_assessment" style="display:none;">
+        <h3>Assessment Before Studying Module Lectures</h3>
+        Please answer the following questions before you finish studying the lectures.
+        <ol>
+          <li>What is 3D printing?</li>
+          <li>List different types of 3D printing technology.</li>
+          <li>List various 3D modeling software.</li>
+          <li>List applications of 3D printing for public use.</li>
+          <li>List applications of 3D printing for public work us.</li>
+        </ol>
+      </div>
+
+      <div class="module4_window tabWindow4" id="lecture1" style="display:none;">
+        <h3>Three Dimensional (3D) Printing</h3>
+        <ul>
+          <li><b>3D Printing, or Additive Manufacturing</b> is the construction of a three-dimensional object from a Computer Aided Design (CAD) model or a digital 3D model. ​</li>
+          <li>The term “3D Printing” can refer to a variety of processes in which material is joined or solidified under computer control to create a three-dimensional object, with material being added together (such as liquid molecules or powder grains being fused together), typically layer by layer. ​
+          </li>
+        </ul>
+        <br>
+        <a href="downloads/module3_ Lecture1_Technology.pdf" download target="_blank" class="moduleLink">Download Complete Lecture 1</a>
+      </div>
+
+      <div class="module4_window tabWindow4" id="lecture2" style="display:none;">
+        <h3>Software</h3>
+        <ul>
+          <li>Software is required to design and create a three-dimensional (3D) model before the model is manufactured by 3D printing.</li>
+          <li>There are two main types of 3D modeling software:
+            <ol>
+              <li>Commercial 3D modeling software that requires a paid license.</li>
+              <li>Free 3D modeling software that requires no fee.</li>
+            </ol>
+          </li>
+        </ul>
+        <br>
+        <a href="downloads/module3_Lecture2_Software.pdf" download target="_blank" class="moduleLink">Download Complete Lecture 2</a>
+      </div>
+
+      <div class="module4_window tabWindow4" id="lecture3" style="display:none;">
+        <h3>Applications of Three Dimensional (3D) Printing Technologies</h3>
+        <ol>
+          <li>Education – General Public Use</li>
+          <li>Prototyping and Manufacturing</li>
+          <li>Medicine – General Public Use</li>
+          <li>Construction – Public Work Use</li>
+          <li>Art and Jewelry – General Public Use </li>
+          <li>Food – General Public Use</li>
+        </ol>
+        <a href="downloads/module3_Lecture3_Application.pdf" download target="_blank" class="moduleLink">Download Complete Lecture 3</a>
+      </div>
+
+      <div class="module4_window tabWindow4" id="module_labs" style="display:none;">
+        <h3>3D Printing Lab #1 – Class Ring​</h3>
+        <ul>
+          <li>Design a class ring with your school logo.​</li>
+          <li>Measure the size of one of your finger and use the size for the ring.​</li>
+          <li>Use Tinkercad software to create a 3D model.​</li>
+          <li>Save the model as a STL file for 3D printing.</li>
+        </ul>
+
+        <h3>3D Printing Lab #2 – Coaster</h3>
+        <ul>
+          <li>Design a coaster with your school logo.​</li>
+          <li>Measure the base size of your cup and use the size for the coaster.​</li>
+          <li>Use Tinkercad software to create a 3D model.​</li>
+          <li>Save the model as a STL file for 3D printing.</li>
+        </ul>
+      </div>
+
+      <div class="module4_window tabWindow4" id="postmodule_assessment" style="display:none;">
+        <h3>Test After Module Lectures</h3>
+        Please answer the following questions after you finish studying the lectures.
+        <ol>
+          <li>What is 3D printing?​</li>
+          <li>What is fused deposition modeling?​</li>
+          <li>Describe laminated object manufacturing.​</li>
+          <li>What is the first step of 3D printing?​</li>
+          <li>What does STL represent?​</li>
+          <li>How is the resolution of a 3D printed object increased?​</li>
+          <li>List the popular commercial 3D modeling software.​</li>
+          <li>List two applications of 3D printing for public use.​</li>
+          <li>What medical products are produced by 3D printing?​</li>
+          <li>What food products are produced by 3D printing?</li>
+        </ol>
+      </div>
+    </div><!-- end of module -->
+
+    <!--FOOTER -->
+    <div class="separator" ></div>
+    <hr>
+    <div class="footer">
+      This OER material was produced as a result of the PIT-UN network Challenge Grant – New America Creative Commons License.
+      <br><br>
+      <span class="copyrighted_img"><a href="https://creativecommons.org/licenses/" target="_blank"><img src="img/copyrighted.png" alt="Creative Commons License" title="Creative Commons License"></a> </span>
+      <br>This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 4.0 License.
+      <br><br><br>
+      Important note: The materials used in this manual have the author's rights and are for educational use only.
+      <br>
+      Website Designed by Prof. Wu @ 2020
+    </p>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

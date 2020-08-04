@@ -4,30 +4,147 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale:1.0;">
     <link rel="stylesheet" href="css/index.css" type="text/css">
-    <title>Module 4: How “Open” is  Open Source Content</title>
+    <link rel="stylesheet" href="css/window_size.css" type="text/css">
+    <title>Module 4: How “Open” is  Open Source Software</title>
   </head>
   <body>
     <div class="navBar">
-      <a href="index.html"class="logo">
-        PIT for TECH100
-      </a>
+      <div class="logo">
+        <a href="https://www.qcc.cuny.edu/" target="_blank"><img src="img/QCC_logo.png" alt="Queenborough Community College" title="Queenborough Community College"></a>
+        <p>Public Interest Technology <br>Open Educational Resources</p>
+      </div>
       <div class="tabs">
           <a href="index.html#team" style="border-right:none;">Meet Our Team</a>
           <a href="module3.html">Module 3</a>
           <a href="module2.html">Module 2</a>
           <a href="module1.html">Module 1</a>
           <a href="index.html">Home</a>
+          <a href="#" class="currentModuleLink" style="  color: rgb(30,30,30);">Module 4</a>
+      </div>
+      <a  href="#openMenu" class="tabs_icon_modal">
+        &#9776; &nbsp Menu
+      </a>
+    </div>
+    <!-- OPEN MENU - ONLY SMARTPHONE VIEW -->
+    <div class="openModalMenu" id="openMenu">
+      <div class="openModalMenu_links">
+        <a class="close_modal_menu" href="#">&#9932; &nbsp Menu</a>
+        <a href="index.html" class="menu_links">Home</a>
+        <a href="module1.html" class="menu_links">Module 1</a>
+        <a href="module2.html" class="menu_links">Module 2</a>
+        <a href="module3.html" class="menu_links">Module 3</a>
+        <a href="module4.html" class="menu_links">Module 4</a>
+        <a href="index.html#team" class="menu_links">Meet Our Team</a>
       </div>
     </div>
 
+    <div class="separator"></div>
+    <span class="title" >Module 4: </span>
+    <span class="subtitle">How “Open” is  Open Source Software: The do’s and Don’t of using Open Source Software</span>
+    <div class="each_module">
+      <div class="each_module_tabs">
+        <button class="eachModule_tab_button module_tab_active tablink4" onclick="openTab4(event,'overview4')">Introduction</button>
+        <button class="eachModule_tab_button tablink4" onclick="openTab4(event,'learningOutcomes4')">A Brief Look to OSS</button>
+        <button class="eachModule_tab_button tablink4" onclick="openTab4(event,'content_module_paragraph')">What the Public Should Know Before Using OSS</button>
+        <button class="eachModule_tab_button tablink4" onclick="openTab4(event,'content_module_end')">Public Ethics When Using OSS</button>
+        <button class="eachModule_tab_button tablink4" onclick="openTab4(event,'module_lab')">Module Lab Exercise</button>
+        <button class="eachModule_tab_button tablink4" onclick="openTab4(event,'module_assessment')">Module Assessment</button>
+        <button class="eachModule_tab_button"><a href="downloads/module4_How_Open_ is_OSS.pdf" download target="_blank" >Download Module 4</a></button>
 
-    <div class="separator"id="module1"></div>
-    <span class="title" >Module 3: </span>
-    <span class="subtitle">How “Open” is  Open Source Content: The do’s and Don’t of using Open Source Content</span>
+      </div>
+
+      <div class="module4_window tabWindow4" id="overview4" style="display:block;">
+        We cannot deny that the internet is one of the most innovative inventions of our time. We use the internet for something as simple as looking for the recipe to make an apple pie, or just to distract ourselves in a social media. However, in the academic and professional field, the internet also plays an important role in our society. Not only it helps us to obtain and collect general information, but also to search and use free digital components. One of these components is what we called Open Source Software, OSS.
+        <br><br>
+        In this module, firstly we will learn what OSS are, and how the idea of sharing open source content originated. Then we will examine and identify the practice and use of OSS. After it, we are going to present the professional and academic ethics that the public has to take into account when using OSS. Finally, we will present the ethical problems in the practice of OSS linked to human values and economic and technical options that these same OSS offer.
+      </div>
+
+      <div class="module4_window tabWindow4" id="learningOutcomes4" style="display:none;">
+        Before we start exploring the con’s and pro’s about using OSS, let's review how the movement of sharing free software emerged. From there we can say that most software development arises in the fields of research at a university. Researching for a new or to improve existing technology is also an essential part of university education, as well as sharing ideas or research results with colleagues, other universities, or industry. Consequently, we can see that many technology companies offer funds to universities’ research projects. We can find in history of open software projects developed between industry and academia, and one of those successful projects is the development and distribution of Linux as an open source operating system.
+        <br><br>
+        Linux is a freely distributable version of Unix, originally developed by Linus Torvalds, who began work on Linux in 1991 as a student at the University of Helsinki in Finland. Linus now works for Transmeta Corporation, a start-up in Santa Clara, California, and continues to maintain the Linux KERNEL, that is, the lowest-level core component of the operating system.
+        Linus released the initial version of Linux for free on the Internet, inadvertently spawning one of the largest software-development phenomena of all time. Today, Linux is authored and maintained by a group of several thousand (if not more) developers loosely collaborating across the Internet.
+        (A brief history of Linux, 2020).
+        <br><br>
+
+        Not only Linux was a great success history of the OSS community, but the idea of sharing open sources has grown over time along with technological and telecommunication advances as well as social demands. One of those social demands is the use of smartphones. Just as the demand for better smartphones grows, so too does the growth of developing software to create smartphone apps. This is how Android Studio takes place. The open source project Android Studio was created as a free alternative for the public to create Android apps. Android Studio is the official IDE, Integrated Development Environment, for Android app development, based on IntelliJ IDEA. Android Studio is part of the Android Open Source Project and accepts contributions. You can find those contributions at Android.com.
+        <br><br>
+        Android is an open source operating system for mobile devices and a corresponding open source project led by Google. On the Android Studio and Android Open Source Project repository offers source code information necessary to create different applications for Android platform. As an open source project, Android's goal is to avoid any central point of failure in which one industry player can restrict or control the innovations of any other player. To that end, Android is a full, production-quality operating system for consumer products, complete with customizable source code that can be ported to nearly any device and public documentation that is available to everyone (Android Source, 2020)
+        <br><br>
+        Another important open source project, which is the a popular open source programming language, Python. Python is developed under an OSI-approved open source license, making it freely usable and distributable, even for commercial use. Python's license is administered by the Python Software Foundation.(Python.org, 2020)
+        <br><br>
+        Python was created in 1991 by Dutch programmer Guido Van Rossum. It is an interpreted language. This means that it has an interpreter to execute the programmer directly, as opposed to depending more complicated machine languages. He has also made the language open source, which means that anyone can contribute to it, and he hopes that it will become as powerful as competing languages.
+        <br><br>
+        Python became popular for the simplicity of its syntax and how fast its compiling process is. It offers concise and readable code by humans, which makes it easier to build models for machine learning. Not surprisingly, given its accessible and versatile nature, Python is among the top five most popular languages in the world.
+        <br><br>
+        Python is used by Wikipedia, Google (where Van Rossum used to work), Yahoo!, CERN and NASA, among many other organizations. It is often used as a “scripting language” for web applications. This means that it can automate specific series of tasks, making it more efficient. Consequently, Python (and languages like it) is often used in software applications, pages within a web browser, the shells of operating systems and some games. Like other coding languages, Python is one of the unseen elements that we benefit from without knowing it.
+        YouTube, Instagram and Quora are among the countless sites that use Python. Much of Dropbox’s code is Python (where Van Rossum works now), Python has been used extensively by digital special effects house ILM (whose work spans across all of the Star Wars and Marvel films) and it’s a favorite of electronics titan Philips. (Code Institute, 2020) .
+        <br><br><hr>
+        <em>  REFERENCES</em>
+        <ul>
+          <li>A brief history of Linux. (2020). Retrieved from O-Reilly:
+            <a href="https://www.oreilly.com/library/view/running-linux-third/156592469X/ch01s02.html#:~:text=your%20free%20trial-,A%20Brief%20History%20of%20Linux,large%20support%20base%20and%20distribution.&text=Linux%20is%20a%20freely%20distributable,University%20of%20Hels" target="_blank">www.oreilly.com</a> </li>
+          <li>  Android Source. (2020). Retrieved from About the Android Open Source Project: <a href="https://source.android.com" target="_blank">source.android.com</a></li>
+          <li>  Code Institute. (2020). Retrieved from Python. What is it used for?: <a href="https://codeinstitute.net/blog/what-is-python-used-for/" target="_blank">codeinstitute.net</a></li>
+          <li>  Ethical Issues in Open Source Software. (2003). Information, communication, and ethics in society, 193-205.</li>
+          <li>  Python.org. (2020). Retrieved from Python: <a href="https://www.python.org/about/#:~:text=Open%2Dsource,by%20the%20Python%20Software%20Foundation" target="_blank">www.python.org</a></li>
+        </ul>
+      </div>
+
+      <div class="module4_window tabWindow4" id="content_module_paragraph" style="display:none;">
+        One of the things you have to take into account when using OSS is the software compatibility with its new version. The OSS community does not contact users of their software when an updated version of the software is released. Normally, the information of the update is published on the website of the OSS organization. So, if you are using some of the OSS, you have to be aware of news relative to the OSS, and also check the organization website or blog to be informed about the OSS that you are using. Moreover, when there is an OSS update, always read carefully which part of the OSS was updated. Some OSS update the entire code library or tools and if you don't have much experience in software update, suddenly you have to read and research more about it in order to understand how to update the new version of the software.
+        <br><br>
+        Another drawback of OSS is that some codes are not compatible from one version to another. That sometimes happens when the OSS algorithm and build-in libraries are mostly restructured from their previous version. From there, you have to find an alternative to manipulate or adjust the previous code to make it compatible with the current version. This does not require a lot of work if you have few codes written in the previous version, but if you have a large project, then it would take a longer time to update the complete code of the project.
+        <br><br>
+        Also keep in mind that the OSS does not have a group of online customer services to help users with any questions or problems have about the OSS. Most of the OSS has help by email but mainly through the open source community, forum, or blog. In other words, if you plan to speak to a representative to ask a question about a part of the OSS that doesn't work in your code or computer, chances are you will find help through the OSS community by communicating back and forth through emails or chats.
+      </div>
+
+      <div class="module4_window tabWindow4" id="content_module_end" style="display:none;">
+        When developers freely share their codes, they hope that their codes are for a good use. But developers are also aware that in an open community, there may be unethical developers who may misuse their codes. Therefore, every time we share our codes freely, we have to take into account what part of the code can and cannot be freely shared. Most of the cases the code that developers do not share are the ones used in ongoing research project. Beside it, it is also important to study the open source community before being part of that community. For example, we can read the terms of use of the community and understand how free and safe is to share the code through that community. Now, if you are part of a community, for professional ethics, you should not use the codes in a way that may harm the safety of the public. These sounds like simple or common sense ethics, but we have to be cautious in how we handle or use OSS.
+        <br><br>
+        Moreover, using OSS for personal or professional purposes, we have to take into account:
+        <ul>
+          <li>where its use is deployed.</li>
+          <li>time it takes to complete its implementation for optimal use.</li>
+          <li>who is in charge of maintaining the code and how often it must be maintained.</li>
+          <li>the security of the OSS with respect to the flow of information.</li>
+          <li>the cost of installation, implementation, and training of the staff who will use it.</li>
+        </ul>
+      </div>
+
+      <div class="module4_window tabWindow4" id="module_lab" style="display:none;">
+        <h3>Lab Exercise: Technological Business Proposal</h3>
+        <b>Introduction</b><br>
+        In this lab exercise, you are going to write a business proposal to the Hong Kong Tourism Board. The board has announced last week at an international press conference their interest to advertise and make the Symphony of Light a known international event. The Symphony of Lights of Hong Kong were inaugurated in 2004 and it continues its presentation to this day. These lights are displayed every night with good weather at 8pm Hong Kong Time. An orchestration of music, decoration lights, laser light displays, and pyrotechnic fireworks, the multimedia light and sound show lasts for around 14 minutes and was conceptualized, created, and installed by LaserVision1.  The Hong Kong Tourism Board wants the Symphony of Lights to be an international event as an initiative to boost Hong Kong's tourism economy. One of those funds is to create a smartphone application, which they called the project <i>Lights Up Hong Kong</i>, and they are accepting international proposals to carry out this project.
+        <br><br>
+        On the other hand, back in USA, you are recently promoted as a Sales and Project Manager in your company that creates Smartphone Apps, <i> Creative Apps Corp.</i>, in New York. This announcement from the Hong Kong Tourism Board is a good opportunity for <i> Creative Apps Corp.</i> to be known internationally for its excellent quality of products and services. Therefore, as a Sales and Project Manager, you decide to write a proposal to offer <i> Creative Apps Corp.</i> services to carry out the <i>Lights Up Hong Kong</i>'s project.
+        <br><br>
+        <a href="downloads/module3_Lecture2_Software.pdf" download target="_blank" class="moduleLink">Download Complete Lab Exercise</a>
+      </div>
+
+      <div class="module4_window tabWindow4" id="module_assessment" style="display:none;">
+        <h3>Program Level Student Learning Outcomes  (PIT-based) </h3>
+        <ul>
+          <li>Students will be able to examine and identify the practice and use of OSS</li>
+          <li>Students will be able to present the professional and academic ethics that the public has to take into account when using OSS.</li>
+          <li>Students will be able to present the ethical problems in the practice of OSS linked to human values and economic and technical options that these same OSS offer. </li>
+        </ul>
+      </div>
+    </div><!-- end of module -->
+
+
+
+    <!--FOOTER -->
+    <div class="separator" ></div>
     <hr>
-    <div class="module">
-      PAGE UDNER CONSTRUCTION
-    </div>
-
+    <div class="footer">
+      This OER material was produced as a result of the PIT-UN network Challenge Grant – New America Creative Commons License.
+      <br><br>
+      <span class="copyrighted_img"><a href="https://creativecommons.org/licenses/" target="_blank"><img src="img/copyrighted.png" alt="Creative Commons License" title="Creative Commons License"></a> </span>
+      <br>This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 4.0 License.
+      <br><br><br>
+      Important note: The materials used in this manual have the author's rights and are for educational use only.
+      <br>Website Designed by Prof. Wu @ 2020</p>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

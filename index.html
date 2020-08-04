@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale:1.0;">
     <link rel="stylesheet" href="css/index.css" type="text/css">
-    <title>PIT-TECH100</title>
+    <link rel="stylesheet" href="css/window_size.css" type="text/css">
+    <title>PIT-OER</title>
   </head>
   <body>
+  <!-- HEADER -->
     <div class="navBar">
       <div class="logo">
-        PIT for TECH100
+        <a href="https://www.qcc.cuny.edu/" target="_blank"><img src="img/QCC_logo.png" alt="Queenborough Community College" title="Queenborough Community College"></a>
+        <p>Public Interest Technology <br>Open Educational Resources</p>
       </div>
       <div class="tabs">
           <a href="#team" style="border-right:none;">Meet Our Team</a>
@@ -19,15 +22,29 @@
           <a href="#module1">Module 1</a>
           <a href="#intro">Our Mission</a>
       </div>
+      <a  href="#openMenu" class="tabs_icon_modal">
+        &#9776; &nbsp Menu
+      </a>
     </div>
-
+    <!-- OPEN MENU - ONLY SMARTPHONE VIEW -->
+    <div class="openModalMenu" id="openMenu">
+      <div class="openModalMenu_links">
+        <a class="close_modal_menu" href="#">&#9932; &nbsp Menu</a>
+        <a href="#intro" class="menu_links">Our Mission</a>
+        <a href="#module1" class="menu_links">Module 1</a>
+        <a href="#module2" class="menu_links">Module 2</a>
+        <a href="#module3" class="menu_links">Module 3</a>
+        <a href="#module4" class="menu_links">Module 4</a>
+        <a href="#team" class="menu_links">Meet Our Team</a>
+      </div>
+    </div>
     <div class="separator"id="intro"></div>
 
+<!-- INTRO -->
     <div class="intro" >
       <h1><em>Engineering and Technology for the Better Good of Society </em></h1>
       <div class="mission">
         <h3>Our Mission Statement </h3>
-        <hr><br>
         Train the incoming engineering technology student to leverage the power of select technologies aligned to the public interest applications and targeted public works institutions.
         <br><br>
         Offer pathways to public service careers by first making students aware that such options exist early in their studies with PIT-centric course work.
@@ -39,102 +56,124 @@
       </div>
     </div>
 
+<!-- MODULE 1 -->
     <div class="separator"id="module1"></div>
     <span class="title" >Module 1: </span>
     <span class="subtitle"> Project Management Technology for various Public Works institutions</span>
-    <hr>
-    <div class="module">
-      <dl>
-        <dt>Components</dt>
-        <dd>Expose students to the importance of organized planning and creating dynamic scheduling offered only with professional software technology.  </dd>
-        <br><br>
-        <dt>Deliverable</dt>
-        <dd>Step-by-step learning module on using MS ProjectTM.
-        <br>
-        The module includes transparent scheduling algorithm and user-friendly interface.</dd>
-        <br><br>
-        <dt>Lab Component</dt>
-        <dd>Three virtual case studies are created and stored as an OER resource.
-        <br>
-        The studies allow creation of virtual case study per instructor’s permission. </dd>
-      </dl>
 
-      <a href="module1.html" class="moduleLink">GO TO MODULE 1</a>
+    <div class="module">
+      <div class="module_tabs">
+        <button class="module_tab_button module_tab_active tablink1" onclick="openTab1(event,'overview1')">Overview</button>
+        <button class="module_tab_button tablink1" onclick="openTab1(event,'learningOutcomes1')">Learning Outcomes</button>
+      </div>
+
+      <div class="module_window tabWindow1" id="overview1">
+        UNDER CONSTRUCTION
+        <br><br>
+        <hr>
+        Module Duration: 9-hours
+      </div>
+
+      <div class="module_window tabWindow1" id="learningOutcomes1" style="display:none;">
+        After completing the content material of module 1, student should be able to:
+        <ul>
+          <li>comprehend</li>
+          <li>understand</li>
+        </ul>
+      </div>
+      <a href="module1.html" class="moduleLink">Go to Module 1</a>
     </div>
   <!-- MODULE 2 -->
   <div class="separator"id="module2"></div>
   <span class="title" >Module 2: </span>
   <span class="subtitle"> Technology and Ethics: “Are You Conflicted?”</span>
-  <hr>
   <div class="module">
-    <dl>
-      <dt>Components</dt>
-      <dd>Conflicts between ethics in engineering and industrial practices.
-      <br>
-      Three contemporary, actual case studies of ethical conflicts in various industrial sectors. </dd>
-      <br><br>
-      <dt>Deliverable</dt>
-      <dd>Self-contained course packet consisting of videos, lecture slides. </dd>
-      <br><br>
-      <dt>Lab Component</dt>
-      <dd>Demonstrate this technology to a school or non-profit organization with applications to the needs of the audience.
-      <br>
-      Field-Demo visits to Public Work Institution will provide highly coveted experiential learning in a Public works surrounding.</dd>
-    </dl>
+    <div class="module_tabs">
+      <button class="module_tab_button module_tab_active tablink2" onclick="openTab2(event,'overview2')">Overview</button>
+      <button class="module_tab_button tablink2" onclick="openTab2(event,'learningOutcomes2')">Learning Outcomes</button>
+    </div>
 
-    <a href="module2.html" class="moduleLink">GO TO MODULE 2</a>
+    <div class="module_window tabWindow2" id="overview2" style="display:block;">
+      UNDER CONSTRUCTION
+      <br><br><hr>
+      Module Duration: 9-hours
+    </div>
+
+    <div class="module_window tabWindow2" id="learningOutcomes2" style="display:none;">
+      After completing the content material of module 2, student should be able to:
+      <ul>
+        <li>comprehend</li>
+        <li>understand</li>
+      </ul>
+    </div>
+    <a href="module2.html" class="moduleLink">Go to Module 2</a>
+
   </div>
 
   <!-- MODULE 3 -->
   <div class="separator" id="module3"></div>
   <span class="title">Module 3: </span>
   <span class="subtitle"> 3D Printing applied to everyday Public Interest (recreational arts) and to Public Work Institutions. </span>
-  <hr>
   <div class="module">
-    <dl>
-      <dt>Components</dt>
-      <dd>Employment of three-dimensional (3D) printing  various  areas including humanities, arts, cooking, and social uses.
-      </dd>
-      <br><br>
-      <dt>Deliverable</dt>
-      <dd>Mini projects for 3D printing for humanities.</dd>
-      <br><br>
-      <dt>Lab Component</dt>
-      <dd>To be determined.</dd>
-    </dl>
+    <div class="module_tabs">
+      <button class="module_tab_button module_tab_active tablink3" onclick="openTab3(event,'overview3')">Overview</button>
+      <button class="module_tab_button tablink3" onclick="openTab3(event,'learningOutcomes3')">Learning Outcomes</button>
+    </div>
 
-    <a href="module3.html" class="moduleLink">GO TO MODULE 3</a>
+    <div class="module_window tabWindow3" id="overview3" style="display:block;">
+      This module presents various technologies of three dimensional (3D) printing, 3D printing materials, basic steps of 3D printing, and printing resolution.  3D printing capabilities at Queensborough Community College are described.  3D modeling software, including commercial software and free software, is introduced.  Learners are trained on using Tinkercad free 3D modeling software for design and creation of three dimensional objects. Applications of 3D printing in general public use and public work use are described. Learners are required to complete two laboratories to design objects of public use.  Learner’s knowledge in 3D printing is assessed prior to and after taking the module.
+      <br><br><hr>
+      Module Duration: 12-hours
+    </div>
+
+    <div class="module_window tabWindow3" id="learningOutcomes3" style="display:none;">
+      Learner will gain knowledge of the various technologies and software of 3D printing. Learner will understand the applications of 3D printing in general public use and public work use. Learner will learn the use of a 3D modeling software and apply the knowledge in designing two objects of general public use.
+      <br><br>
+      After completing the content material of module 3, student should be able to:
+      <ol>
+        <li>assess learner’s 3D printing knowledge prior to taking the module.</li>
+        <li>describe various 3D printing technologies.</li>
+        <li>introduce 3D printing materials.​</li>
+        <li>describe basic steps of 3D printing.</li>
+        <li>describe printing resolution​</li>
+        <li>describe 3D printing equipment at Queensborough Community College.​</li>
+        <li>introduce commercial 3D modeling software.​</li>
+        <li>introduce free 3D modeling software. ​</li>
+        <li>train learners in Tinkercad 3D modeling software.​</li>
+        <li>describe applications of 3D printing including those for general public use and public work use.​</li>
+        <li>assign two laboratories.​</li>
+        <li>assess learner’s 3D printing knowledge after completing the module.</li>
+      </ol>
+    </div>
+    <a href="module3.html" class="moduleLink">Go to Module 3</a>
   </div>
 
   <!-- MODULE 4 -->
   <div class="separator" id="module4"></div>
   <span class="title" >Module 4: </span>
   <span class="subtitle"> How “Open” is  Open Source Content: The do’s and Don’t of using Open Source Content </span>
-  <hr>
   <div class="module">
-    <dl>
-      <dt>Components</dt>
-      <dd>Meaning and types of open sources software (OSS) in engineering and technology.
-        <br>
-        Advantages and disadvantages of using OSS / Content
-        Reliability and feasibility of the use and implementation of OSS.
-        <br>
-        Licensing and policies of OSS.
-      </dd>
-      <br><br>
-      <dt>Deliverable</dt>
-      <dd>Self-contained course packet consisting of videos, lecture slides. </dd>
-      <br><br>
-      <dt>Lab Component</dt>
-      <dd>Lab Exercises on creating mini Project assembly and use of OSS and Simulated Case Study for Evaluation.
-      <br>
-      Students’ lab reports including discussion of the three cases, appropriateness of employing OSS, and appropriate approach to OSS for satisfactory and adequate use of the OSS.
-      </dd>
-    </dl>
+    <div class="module_tabs">
+      <button class="module_tab_button module_tab_active tablink4" onclick="openTab4(event,'overview4')">Overview</button>
+      <button class="module_tab_button tablink4" onclick="openTab4(event,'learningOutcomes4')">Learning Outcomes</button>
+    </div>
 
-    <a href="module4.html" class="moduleLink">GO TO MODULE 4</a>
+    <div class="module_window tabWindow4" id="overview4" style="display:block;">
+      In this module, firstly we will learn what open sources software are, and how the idea of sharing open source content originated. Then we will examine and identify the practice and use of open source software. After it, we are going to present the professional and academic ethics that the public has to take into account when using open source software. Finally, we will present the ethical problems in the practice of open source software linked to human values and economic and technical options that these same OSS offer.
+      <br><br><hr>
+      Module Duration: 3-hours
+    </div>
+
+    <div class="module_window tabWindow4" id="learningOutcomes4" style="display:none;">
+      After completing the content material of module 4, student should be able to:
+    <ul>
+      <li>examine and identify the practice and use of Open Source Software, OSS </li>
+      <li>present professional and academic ethics that the public has to take into account when using OSS</li>
+      <li>present the ethical problems in the practice of OSS linked to human values and economic and technical options that these same OSS offer.</li>
+    </ul>
+    </div>
+    <a href="module4.html" class="moduleLink">Go to Module 4</a>
   </div>
-
   <!-- TEAM MEMBER -->
   <div class="separator" id="team"></div>
   <span class="title" >Meet</span>
@@ -142,13 +181,25 @@
   <!--Prof. Stroumbakis-->
   <div class="authors">
     <img src="img/dstroumbakis.jpg" alt="Professor Stroumbakis" Title="Professor Stroumbakis" class="author_img">
-    <b>Professor Dimitrios Stroumbakis, P.E., M.S.</b>
+    <h3>Professor Dimitrios Stroumbakis, P.E., M.S.</h3>
+    <b>Contact Info:</b><br>
+    <a href="mailto:dstroumbakis@qcc.cuny.edu" target="_blank"><span>&#128231;</span>Email: dstroumbakis@qcc.cuny.edu</a>
+    <br>
+    <a href="https://www.qcc.cuny.edu/engtech/ET_Faculty/Stroumbakis.html" target="_blank"><span>&#127760;</span>Website: www.qcc.cuny.edu/engtech/ET_Faculty/Stroumbakis</a>
     <br><br>
   </div>
   <!--Prof. Lam-->
   <div class="authors">
     <img src="img/Prof_Lam.jpg" alt="Professor Lam" Title="Professor Lam" class="author_img">
-    <b>Doctor Raymond Lam, Ph.E.</b>
+    <h3>Doctor Raymond Lam, Ph.E.</h3>
+    Dr. Lam is an assistant professor at the department of Engineering Technology of Queensborough Community College. He earned his Doctor of Science in Materials Science and Engineering from Massachusetts Institute of Technology in 1998, Master of Science in 1983 and Bachelor of Science in 1981 both in Mechanical Engineering from University of Hawaii at Manoa. He has an extensive industrial experience of more than 25 years taking the roles of senior material scientist, development engineer, manufacturing engineer, manufacturing engineering manager, and quality engineer. He received 10 U.S. patents and published/presented 14 technical papers.  Currently, Dr. Lam is working on research in three-dimensional printing.
+    <br><br>
+    Currently, Dr. Lam is working on research project with 3D printing.
+    <br><br>
+    <b>Contact Info:</b><br>
+    <a href="mailto:rlam@qcc.cuny.edu" target="_blank"><span>&#128231;</span>Email: rlam@qcc.cuny.edu</a>
+    <br>
+    <a href="https://www.qcc.cuny.edu/engtech/ET_Faculty/Lam.html" target="_blank"><span>&#127760;</span>Website: www.qcc.cuny.edu/engtech/ET_Faculty/Lam</a>
     <br><br>
   </div>
 
@@ -156,24 +207,24 @@
   <div class="authors">
     <img src="img/Prof_Wu.jpeg" alt="Professor Wu" Title="Professor Wu" class="author_img">
 
-    <b>Professor Huixin Wu, M.S.</b> <br><br>Professor Wu is the course coordinator of the Digital Computer Theory course with the department of Engineering Technology at QCC. As the course coordinator, professor Wu updates the course outline and also creates homework and exercises to complement the learning materials for the course. She also has participated in grants and has experiences in creating new teaching terminologies for engineering technology students. She was the CO-PI of the National Science Foundation (NSF) STEM grant titled “A video Lecture Library and an Interactive Systems for Computer Programming Concepts”. In addition from her teaching schedule, she is the lead of the curriculum development of TechWorks grant, and a faculty mentor of the students Undergraduate Research Project program at QCC. Professor Wu has more than ten years of experience teaching both the Digital Computer Theory course and laboratory in QCC and NYCCT.
+    <h3>Professor Huixin Wu, M.S.</h3> Professor Wu is a lecturer at the department of Engineering Technology of Queensborough Community College. She earned her Master of Science in Electrical Engineering from Stony Brook University, 2008. Prof. Wu is the course coordinator of the Digital Computer Theory course with the department of Engineering Technology at QCC. As the course coordinator, professor Wu updates the course outline and also creates homework and exercises to complement the learning materials for the course. She also has participated in grants and has experiences in creating new teaching terminologies for engineering technology students. She was the CO-PI of the National Science Foundation (NSF) STEM grant titled “A video Lecture Library and an Interactive Systems for Computer Programming Concepts”. In addition from her teaching schedule, she is the lead of the curriculum development of TechWorks grant, and a faculty mentor of the students Undergraduate Research Project program at QCC. Professor Wu has more than ten years of experience teaching both the Digital Computer Theory course and laboratory in QCC and NYCCT.
     <br><br>
     <b>Contact Info:</b><br>
-    <a href="mailto:hwu@qcc.cuny.edu" target="_blank"><span>&#128231;</span> hwu@qcc.cuny.edu</a>
+    <a href="mailto:hwu@qcc.cuny.edu" target="_blank"><span>&#128231;</span>Email: hwu@qcc.cuny.edu</a>
+    <br>
+    <a href="https://www.qcc.cuny.edu/engtech/ET_Faculty/Wu.html" target="_blank"><span>&#127760;</span>Website: www.qcc.cuny.edu/engtech/ET_Faculty/Wu</a>
   </div>
-
 
   <!--FOOTER -->
-  <div class="separator" ></div>
-  <hr>
   <div class="footer">
-    This Web Technology OER material, by Huixin Wu, is copyrighted under the terms of a Creative Commons license:
+    This OER material was produced as a result of the PIT-UN network Challenge Grant – New America Creative Commons License.
     <br><br>
     <span class="copyrighted_img"><a href="https://creativecommons.org/licenses/" target="_blank"><img src="img/copyrighted.png" alt="Creative Commons License" title="Creative Commons License"></a> </span>
-    <br>
-    This work is freely redistributable for non-commercial use, share-alike with attribution.
-    <br><br><br>
-    Important note: The materials used in this manual have the author's rights and are for educational use only. </p>
+    This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 4.0 License.
+    <br><br>
+    Important note: The materials used in this manual have the author's rights and are for educational use only.
+    <br>Website Designed by Prof. Wu @ 2020</p>
   </div>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

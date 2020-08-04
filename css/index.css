@@ -283,6 +283,7 @@ pointer-events: none;
 .authors a{
   text-align: left;
   font-size: 0.8em;
+  display:block;
 }
 /* footer */
 .footer{

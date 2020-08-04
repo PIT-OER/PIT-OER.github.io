@@ -280,6 +280,9 @@ pointer-events: none;
   border: ridge white;
   float: left;
 }
+.authors a{
+  text-align: left;
+}
 /* footer */
 .footer{
   width: 100%;

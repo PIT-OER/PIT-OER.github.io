@@ -110,9 +110,7 @@ pointer-events: none;
   text-decoration: none;
   background-color: var(--primaryColor);
 }
-.currentModuleLink{
-  font-size: 1.2em;
-}
+
 .separator{
   height: 10em;
   /*border-top: ridge 2px black;*/

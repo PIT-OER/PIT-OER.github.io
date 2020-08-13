@@ -200,6 +200,11 @@ pointer-events: none;
   box-shadow: 2px 2px 5px rgb(30,30,30);
   text-decoration: none;
 }
+/*-- module authors --*/
+.module_author{
+  font-size:0.8em;
+  font-style:italic;
+}
 /*-- module tabs --*/
 .module_tabs{
   width: 100%;

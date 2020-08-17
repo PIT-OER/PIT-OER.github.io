@@ -136,7 +136,7 @@ pointer-events: none;
   height: 80%;
   font-size: 1.2em;
   padding: 0.6em;
-  overflow: hidden;
+  overflow-y: scroll;
   text-align: justify;
   float: left;
 }

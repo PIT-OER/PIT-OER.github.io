@@ -10,20 +10,20 @@ font-family:calibri;   font-size: 1.05em;}
   --primaryColor:rgb(120,160,230);
 }
 /* -- scrollbar behavior--*/
-::-webkit-scrollbar {
+::-webkit-scrollbar, scrollbar {
   width: 1em;
 }
 /* Track */
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track, scrollbar-track {
   background: black;
 }
 /* Handle */
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb, scrollbar-thumb {
   background: #555;
   border-radius: 0.5em;
 }
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover, scrollbar-thumb:hover {
   background: #888;
 }
 /* -- HEADER --*/

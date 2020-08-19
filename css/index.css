@@ -19,13 +19,13 @@ font-family:calibri;   font-size: 1.05em;}
 }
 /* Handle */
 ::-webkit-scrollbar-thumb, scrollbar-thumb {
-  background: rgb(30,30,30);
+  background: black;
   border-radius: 0.5em;
   height: 1em;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover, scrollbar-thumb:hover {
-  background: black;
+  background: rgb(30,30,30);
 }
 /* -- HEADER --*/
 .navBar{
